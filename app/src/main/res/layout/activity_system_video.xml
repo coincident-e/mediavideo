@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@android:color/black"
+    tools:context="com.example.wumin.myapplication.activity.SystemVideoActivity">
+<com.example.wumin.myapplication.view.VideoView
+    android:id="@+id/videoview_system"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+    <include layout="@layout/mediacontroller_layout"
+         android:id="@+id/mediacontroller"/>
+    <include layout="@layout/ll_buffer" android:id="@+id/ll_buffer"/>
+    <include layout="@layout/ll_loading" android:id="@+id/ll_loading"/>
+</RelativeLayout>

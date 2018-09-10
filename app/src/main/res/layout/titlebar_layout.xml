@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.wumin.myapplication.view.TitleBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="#ff3097FD"
+    android:gravity="center_vertical">
+<ImageView
+    android:layout_marginLeft="8dp"
+    android:id="@+id/iv_titlebar"
+    android:layout_width="wrap_content"
+    android:layout_height="55dp"
+    android:src="@drawable/ic_topbanner_logo"/>
+    <TextView
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:id="@+id/tv_search_titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="全网搜索"
+        android:textSize="14sp"
+        android:drawableLeft="@drawable/tv_search_titlebar_icon_selector"
+        android:layout_marginLeft="5dp"
+        android:drawablePadding="3dp"
+        android:textColor="@drawable/tv_search_titlebar_textcolor_selector"
+        android:background="@drawable/tv_search_titlebar_bg_selector"/>
+    <RelativeLayout
+        android:clickable="true"
+        android:id="@+id/rl_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:id="@+id/tv_game_titlebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_topbanner_game"/>
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:src="@drawable/dot"
+            android:layout_alignRight="@+id/tv_game_titlebar"/>
+    </RelativeLayout>
+    <ImageView
+        android:clickable="true"
+        android:id="@+id/iv_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_topbanner_record"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="5dp"
+        />
+</com.example.wumin.myapplication.view.TitleBar>

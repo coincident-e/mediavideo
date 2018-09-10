@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base_bg"
+    tools:context="com.example.wumin.myapplication.activity.AudioPlayerActivity">
+<RelativeLayout
+    android:id="@+id/rl_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/image_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/now_playing_matrix_01"
+        />
+    <com.example.wumin.myapplication.view.BaseVisualizerView
+        android:id="@+id/basevisualizerview"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_singer_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:text="singer"
+        android:layout_marginTop="40dp"
+        />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_songname_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:text="songname"
+        android:layout_below="@+id/tv_singer_audio"
+        />
+
+
+</RelativeLayout>
+<LinearLayout
+    android:id="@+id/ll_bottom"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true">
+
+    <TextView
+        android:id="@+id/tv_time_audio"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:text="00:00/00:00"
+        />
+    <SeekBar
+        android:id="@+id/seekbar_audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="5dp"
+        android:maxHeight="8dp"
+        android:thumb="@drawable/seek_thumb"
+        android:progressDrawable="@drawable/seekbar_horizontal"
+        android:progress="20"
+        android:indeterminate="false" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <Button
+            android:id="@+id/btn_audio_playmode"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_audio_playmode_order_selector"/>
+        <Button
+            android:id="@+id/btn_audio_pre"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_audio_pre_selector"/>
+        <Button
+            android:id="@+id/btn_audio_start_pause"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_audio_pause_selector"/>
+        <Button
+            android:id="@+id/btn_audio_next"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_audio_next_selector"/>
+        <Button
+            android:id="@+id/btn_audio_lyric"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_audio_lyric_selector"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+    <com.example.wumin.myapplication.view.ShowLyricView
+        android:id="@+id/showlyricview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_top"
+        android:layout_above="@+id/ll_bottom"
+        />
+</RelativeLayout>

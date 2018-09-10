@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\application\\speechDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon.png",
+        "source": "D:\\application\\speechDemo\\src\\main\\res\\drawable-hdpi\\icon.png"
+    },
+    {
+        "merged": "D:\\application\\speechDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\no_photo.png",
+        "source": "D:\\application\\speechDemo\\src\\main\\res\\drawable-hdpi\\no_photo.png"
+    }
+]

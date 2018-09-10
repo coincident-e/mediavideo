@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wumin.myapplication.fragments.NetVideoFragment">
+
+    <com.example.wumin.myapplication.view.XListView
+        android:id="@+id/listview_netvideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.example.wumin.myapplication.view.XListView>
+    <ProgressBar
+        android:id="@+id/pb_netvideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_nonetvideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="没有网络视频"
+        android:textSize="18sp"
+        android:visibility="gone"/>
+
+</FrameLayout>

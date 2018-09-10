@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="23"
+    density="xxhdpi"
+    format="7"
+    timestamp="26903498027314" >
+
+    <task
+        name="javac"
+        duration="3389" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="1283" />
+    <task
+        name="verifier"
+        duration="219" />
+
+    <artifact
+        location="D:\application\speechDemo\build\outputs\apk\speechDemo-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="26903498027314" >
+        <artifact
+            location="D:\application\speechDemo\build\outputs\apk\speechDemo-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>
